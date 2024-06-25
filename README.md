@@ -1,1 +1,2 @@
-ReadMe for the file for the storage of the HTML and CSS for SIM Group 99
+# Web Dev Boostrap (Net Ninja)
+ Retrying Web Dev following(Net Ninja tutorial on youtube)

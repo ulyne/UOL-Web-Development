@@ -1,0 +1,72 @@
+@font-face {
+    font-family: MightySouly;
+    src: url(Assets/Fonts/MightySouly-lxggD.ttf);
+}
+
+body {
+    background-image: linear-gradient(rgb(48, 218, 177), rgb(36, 84, 141), rgb(11, 38, 70));
+}
+
+
+.carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    z-index: 1;
+    font-family: MightySouly;
+}
+
+.carousel-caption h1{
+    color: rgb(242, 226, 5);;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+}
+
+.nunito {
+    font-family: "nunito";
+    font-weight: bold;
+}
+
+#extra {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cardContainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 54px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.card-header{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.socials {
+    min-width: 47px;
+    transition: all .2s ease-in-out;
+}
+
+.socials:hover {
+    Transform: scale(1.2)
+}
+
+.btn {
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #EA671E;
+    color: white;
+}

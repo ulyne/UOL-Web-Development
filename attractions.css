@@ -1,0 +1,162 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: linear-gradient(rgb(48, 218, 177), rgb(36, 84, 141), rgb(11, 38, 70));
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #36a;
+}
+
+#hero {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+#attractions-list {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.ride-carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 20px;
+    display: none; /* Hide all slides by default */
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #36a;
+}
+
+.slide p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.slide button {
+    padding: 10px 20px;
+    background-color: #36a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none; /* Hide load more button by default */
+}
+
+.slide button:hover {
+    background-color: #259;
+}
+
+.slide:hover .load-more {
+    display: inline-block; /* Show load more button on hover */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

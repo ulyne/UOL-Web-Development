@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7a0dc462e.js" crossorigin="anonymous"></script>
+    <title>Glove World</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nunito navbar navbar-expand-lg navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-dark h1">
+                    Glove World
+                </span>
+            </a>
+            <!-- Toggle button/Hamburger menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark h2">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark h2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Attractions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nunito" href="attractions.html">Our Rides</a></li>
+                            <li><a class="dropdown-item nunito" href="meetngreet.html">Meet and Greet</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark h2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Membership
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nunito" href="#">Sign in</a></li>
+                            <li><a class="dropdown-item nunito" href="membership_pass.html">Premium Price</a></li>
+                            <li><a class="dropdown-item nunito" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact Us.html" class="nav-link text-dark h2">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-2 pt-1">
+                        <a href="#" class="btn btn-outline-light btn-lg fw-bold">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" data-bs-target="#offcanvas"
+        aria-labelledby="offcanvas">
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-dark h2">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark h2" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Attractions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item nunito" href="attractions.html">Our Rides</a></li>
+                        <li><a class="dropdown-item nunito" href="meetngreet.html">Meet and Greet</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark h2" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Membership
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item nunito" href="#">Sign in</a></li>
+                        <li><a class="dropdown-item nunito" href="membership_pass.html">Premium Price</a></li>
+                        <li><a class="dropdown-item nunito" href="#">Something else here</a></li>
+                    </ul>
+                <li class="nav-item ms-2 pt-1">
+                    <a href="#" class="btn btn-outline-light btn-lg fw-bold">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Carousel -->
+    <div class="container-lg">
+        <div id="carousel" class="carousel slide border border-light border-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Images/Glove world(upscaled).PNG" class="d-block w-100" alt="...">
+                    <div
+                        class="carousel-caption d-none d-sm-flex flex-column h-100 justify-content-center align-items-center bottom-0">
+                        <h1 class="display-1">Welcome to glove world</h1>
+                        <a href="#" class="nunito btn my-3 btn-lg">Learn more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Images/Glove world(upscaled).PNG" class="d-block w-100" alt="...">
+                    <div
+                        class="carousel-caption d-none d-sm-flex flex-column h-100 justify-content-center align-items-center bottom-0">
+                        <h1 class="display-1">Welcome to glove world</h1>
+                        <a href="#" class="nunito btn my-3 btn-lg">Learn more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Images/Glove world(upscaled).PNG" class="d-block w-100" alt="...">
+                    <div
+                        class="carousel-caption d-none d-sm-flex flex-column h-100 justify-content-center align-items-center bottom-0 my-3">
+                        <h1 class="display-1">Welcome to glove world</h1>
+                        <a href="#" class="nunito btn my-3 btn-lg">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="extra" class="container-md d-sm-none d-flex justify-content-center">
+            <a href="#" class="btn my-3">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Highlight Header -->
+    <div class="nunito container d-flex justify-content-center align-center my-5 text-light">
+        <h1>Highlights</h1>
+    </div>
+
+    <!-- Highlights cards -->
+    <div class="nunito container-lg">
+        <div id="cardContainer" class="row justify-content-center">
+            <div class="col-8 col-lg-5 col-xl-5 m-4">
+                <div class="card h-100 border-0">
+                    <div class="card-header">
+                        <h2>Catch Spongebob!</h2>
+                    </div>
+                    <img class="card-img-top" src="Assets/Images/Free glove.jpg" alt="Free Glove">
+                    <div class="card-body">
+
+                        <p>From 15th June to 31st June
+                            Our resident sponge will be walking around the park
+                            Snap a photo and win a brand new Jelly-fishing net!
+
+                            <br><br><em>~I'm ready, I'm ready, I'm ready</em>
+                        </p>
+                        <a href="#" class="btn btn-lg fw-bold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-5 col-xl-5 m-4">
+                <div class="card h-100 border-0">
+                    <div class="card-header">
+                        <h2>1-for-1 Sundae!</h2>
+                    </div>
+                    <img class="card-img-top" src="Assets/Images/1 for 1 sundae.PNG" alt="Free Glove">
+                    <div class="card-body">
+                        <p>EVERY WEEKEND!
+                            Bring your star best friend along and do an impression of spongebob and
+                            his pink best friend to get a 1 for 1 deal on our signature Triple Gooble Berry at
+                            Goofy Goober's ice cream parlor! <br><br><em>~I'm a goofy goober yeah!</em>
+                        </p>
+                        <a href="#" class="btn btn-lg fw-bold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white mt-5">
+        <!-- Grid container -->
+        <div class="nunito container border-top border-light justify-content-between align-items-center py-4">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <a class="navbar-brand" href="#">
+                        <span class="text-light">
+                            <h1>Gloveworld-Coasters.com</h1>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-5 text-lg-end text-md-start">
+                    <!-- Social Icons container -->
+                    <!-- Facebook -->
+                    <a data-mdb-ripple-init class="socials btn text-white btn-floating m-1 border-0"
+                        style="background-color: #3b5998; font-size: 20px;" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <!-- Twitter -->
+                    <a data-mdb-ripple-init class="socials btn text-white btn-floating m-1 border-0"
+                        style="background-color: #55acee; font-size: 20px;" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+                    <!-- Instagram -->
+                    <a data-mdb-ripple-init class="socials btn text-white btn-floating m-1 border-0"
+                        style="background-image: linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7); font-size: 20px;"
+                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <!-- Youtube -->
+                    <a data-mdb-ripple-init class="socials btn text-white btn-floating m-1 border-0"
+                        style="background-color: red; font-size: 20px;" href="#!" role="button"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="#">Gloveworld-Coasters.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

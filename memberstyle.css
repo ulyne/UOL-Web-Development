@@ -1,0 +1,45 @@
+@font-face {
+    font-family: MightySouly;
+    src: url(Assets/Fonts/MightySouly-lxggD.ttf);
+}
+
+body {
+    background-image: linear-gradient(rgb(48, 218, 177), rgb(36, 84, 141), rgb(11, 38, 70));
+    background-attachment: fixed;
+
+}
+
+section {
+    padding: 60px 0;
+}
+
+.nunito {
+    font-family: "nunito";
+    font-weight: bold;
+}
+
+.socials {
+    min-width: 47px;
+    transition: all .2s ease-in-out;
+}
+
+.socials:hover {
+    Transform: scale(1.2)
+}
+
+.btn {
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #EA671E;
+    color: white;
+}
+
+.btn-buy {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glove World</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-image: linear-gradient(rgb(48, 218, 177), rgb(36, 84, 141), rgb(11, 38, 70));
+            background-attachment: fixed;
+            margin: 0;
+            color: #333;
+            text-align: center;
+            padding: 0 10px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .logo img {
+            height: 40px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 0 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #36a;
+        }
+        #hero {
+            padding: 30px 10px;
+            background: rgba(255, 255, 255, 0.6);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        #highlights {
+            padding: 30px 10px;
+            background: rgba(255, 255, 255, 0.6);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .highlight {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .highlight img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .highlight h3 {
+            margin: 10px 0;
+            font-size: 1.3em;
+            color: #36a;
+        }
+        .highlight p {
+            margin: 10px 0;
+            color: #555;
+            text-align: center;
+            max-width: 400px;
+        }
+        .highlight button {
+            padding: 8px 16px;
+            background-color: #36a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .highlight button:hover {
+            background-color: #259;
+        }
+        .additional-info {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .slide.open .additional-info {
+            display: block;
+        }
+        footer {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/Images/Vishal/glove-world-icon@2x.png" alt="Glove World">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="checkout.html">Tickets</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="membership_pass.html">Members</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to Glove World</h1>
+        <p>Dive into the vibrant world of Bikini Bottom with SpongeBob and his pals. Join us for an adventure like no other in Glove World!</p>
+    </section>
+
+    <section id="highlights">
+        <h2>Discover the top highlights of Glove World</h2>
+        <div class="highlight">
+            <img src="Assets/Images/Vishal/meetngreet.jpg" alt="Meet & Greet">
+            <h3>Meet 'n' Greets with SpongeBob SquarePants Characters</h3>
+            <p>Whether it's SpongeBob or Patrick, Squidward, or a supervillain such as Plankton, there are plenty of Meet 'n' Greets throughout Glove World where you can grab a photo that you'll cherish forever.</p>
+            <a href="meetngreet.html"><button>View all Meet 'n' Greets</button></a>
+        </div>
+        <div class="highlight">
+            <img src="Assets/Images/Vishal/attractions.jpeg"alt="Attractions">
+            <h3>Sponge-tastic Attractions</h3>
+            <p>Dive into the wonders of Bikini Bottom, journey through the whimsical realms of Goo Lagoon, set sail on a daring voyage with SpongeBob and his crew on Atlantis SquarePantis, and explore countless other aquatic adventures!</p>
+            <a href="attractions.html"><button>See all attractions</button></a>
+        </div>
+    </section>
+
+    <section id="attractions-list">
+        <h2>Our Attractions</h2>
+        <div class="ride-carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="slides">
+                <div class="slide">
+                    <img src= "Assets/Images/Vishal/jellyfishadventure.jpeg"alt="Attraction 1">
+                    <h3>SpongeBob's Jellyfish Adventure</h3>
+                    <p>Join SpongeBob on an exciting jellyfish-catching adventure.</p>
+                    <button class="load-more-btn">Load More</button>
+                    <div class="additional-info">
+                        <h4>Ride Rules & Regulations:</h4>
+                        <ul>
+                            <li>Height requirement: 42 inches</li>
+                            <li>Not recommended for guests with heart conditions</li>
+                            <li>Secure all loose articles before boarding</li>
+                        </ul>
+                                            </div>
+                </div>
+                <div class="slide">
+                    <img src="Assets/Images/Vishal/rollercoaster.jpeg" alt="Attraction 2">
+                    <h3>Patrick's Rockin' Roller Coaster</h3>
+                    <p>Experience the thrill of Patrick's rockin' roller coaster ride.</p>
+                    <button class="load-more-btn">Load More</button>
+                    <div class="additional-info">
+                        <h4>Ride Rules & Regulations:</h4>
+                        <ul>
+                            <li>Height requirement: 48 inches</li>
+                            <li>Not suitable for pregnant women</li>
+                            <li>Keep hands and feet inside the ride at all times</li>
+                        </ul>
+           
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Assets/Images/Vishal/symphony.jpeg" alt="Attraction 3">
+                    <h3>Squidward's Symphony Swing</h3>
+                    <p>Swing along with Squidward in this musical adventure.</p>
+                    <button class="load-more-btn">Load More</button>
+                    <div class="additional-info">
+                        <h4>Ride Rules & Regulations:</h4>
+                        <ul>
+                            <li>Height requirement: 40 inches</li>
+                            <li>Guests must be able to sit upright without assistance</li>
+                            <li>No loose articles allowed on the ride</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Glove World. All rights reserved.</p>
+        
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("slide");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex].style.display = "block";  
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= document.getElementsByClassName("slide").length) {
+                slideIndex = 0;
+            }
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = document.getElementsByClassName("slide").length - 1;
+            }
+            showSlides();
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadMoreButtons = document.querySelectorAll(".load-more-btn");
+
+            loadMoreButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    const slide = this.parentNode;
+                    slide.classList.toggle("open");
+                });
+            });
+
+            showSlides();
+        });
+    </script>
+</body>
+</html>
